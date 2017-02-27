@@ -6,11 +6,286 @@
 
     <style>
 
+		body {
+			font-family: "AvenirNext-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+    #form {
+	    width: 650px;
+	    height: 600px;
+	    margin: 0 auto; 
+	    box-shadow: 1px 1px 5px #888888;
+    }
+
+    #left_form {
+    	margin-top: 13px;
+    	margin-left: 13px;
+    	margin-right: -13px;
+    	width: 55%;
+    	height: 95%;
+    	float: left;
+    }
+
+    #right_form {
+     	margin-left: 20px;
+
+    	padding-top:1px;
+    	padding-bottom: 285px;
+
+    	background-color: #F5F5F5;
+
+    	color:grey;
+    }
+
+    #right_side {	
+    	width: 28%;
+    	margin-top: 20px;
+    	margin-right: 20px;
+    	float: right;
+    	border-left: 1px solid grey;
+		}
+
+		#right_form li {
+			font-size:10px;
+			margin-bottom: 9px;
+		}
+
+		#right_form ul {
+		  padding-left: 30px;
+      padding-right: 30px;
+		}
+
+		#right_form h3 {
+			font-family: "AvenirNext-Regular-Mint", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 16px;
+			margin-left: 20px;
+			margin-bottom: -7px;
+			font-weight: regular;
+		}
+
+    form{
+    	margin: 20px;
+    }
+
+	  input {
+    	font-size: 10px;
+    	padding-top:6px;
+    	padding-bottom:6px;
+    	padding-left: 3px;
+      width: 75%;
+      display: block;
+     	margin-top:10px;
+     	-webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+			border-radius: 2px;
+			border-color: grey;
+    }
+
+		label {
+			font-size:10px;
+	 		margin-bottom: 20px;
+	 		display: block;
+		}
+
+		#title {
+			display: block;
+			font-size:25px;
+			margin-bottom: 30px;
+		}
+
+		#check {
+			margin-left: -5px;
+			display: inline;
+			margin-right: -210px;
+		}
+
+		#sign_up {
+			width: 100px;
+			background-color: #54d8f2;
+			color: white;
+		 border: none;
+		}
+
+		#footer_1 {
+    	text-align: center;
+    	margin-right: 40px;
+    	margin-top: 40px;
+		}
+
+		#footer_1 ul {
+			list-style-type: none;
+		}
+
+		#footer_1 ul li {
+
+			display: inline;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 12px;
+			color: grey;
+		}
+
+		#footer_2 {
+			margin-top: 50px;
+    	text-align:center;
+ 		}
+
+		#truste {
+			width: 150px;
+		}
+
+		#norton {
+			width: 75px;
+		}
+
+		.footer_images {
+ 			display:inline-block;
+ 			margin-left: 15px;
+ 			margin-right: 15px;
+ 		}
+
+ 		#footer_3 {
+ 			text-align: center;
+ 			font-size: 8px;
+ 			color: grey;
+ 		}
+
+ 		#header {
+ 			width: 650px;
+ 			height: 100px;
+ 			margin: 0 auto;
+ 			margin-bottom: 10px;
+
+ 			/* */
+ 			position: relative;
+ 		}
+
+ 		#header ul {
+ 			list-style-type: none;
+ 			float: right;
+
+ 			position: absolute ;
+ 			right: 5px;
+    	bottom: -15px;
+ 		}
+
+ 		#header ul li {
+ 			display: inline;
+ 			font-size: 12px;
+ 		}
+
+ 		#header img {
+ 			width: 100px;
+ 			float: left;
+ 			
+ 			/* */
+ 			position: absolute;
+ 			left: 0;
+    	bottom: 0;
+ 		}
+
+ 		#sign_upr {
+ 			font-weight: bold;
+ 		}
     </style>
 
   </head>
 
   <body>
+
+
+  	<div id="header">
+  	  <img src="assets/mint.png">
+  	    	 <ul>
+  <li id="sign_upr">Sign Up</li>
+  <li> | </li>
+  <li> Log In</li>
+  </ul>
+  	</div>
+
+	  <div id="form">
+		  <div id="left_form">
+		  	<form action="" method="">
+
+				  	<span id="title"> See all your finances in one place & create a budget </span>
+
+				  	<label>
+				  		Your Email
+				  		<input class="" type="email" name="email" required>
+				  	</label>
+
+			  		<label>
+			  			Confirm Email
+				  		<input class="" type="email" name="email_confirmation" required>
+				  	</label>
+
+			  		<label>
+			  			Phone(recommended)
+					  	<input class="" id="phone" type="text" name="phone">
+					  	Standard call, messaging or data rates may apply.
+				  	</label>
+
+				  	<label>
+				  		Password
+				  		<input class="" type="password" name="password" required>
+				  	</label>
+
+			  		<label>
+			  			Confirm Password
+			  			<input class="" type="password" name="password_confirmation" required>
+			  		</label>
+			  		
+			  		<label>
+				  		<input id="check" class="" type="checkbox">
+				  		Remember Me
+			  		</label>
+
+			  		<input id="sign_up" class="" type="submit" value="SIGN UP">
+
+			  		<input type="hidden" name="test" value="Hello World">
+
+		  	</form>
+		  </div>
+
+		  <div id="right_side">
+			  <div id="right_form">
+			  	<h3>Why you'll love it</h3>
+			  	<ul>
+			  		<li>See all your accounts in one place</li>
+			  		<li>Set a budget and pay down your debt</li>
+						<li>Find the best ways to grow your money</li>
+						<li>Stay safe and secure</li>
+			  	</ul>
+			  </div>
+			</div>
+
+	  </div>
+	<div id="footer_1">
+		<ul>
+			<li> Support </li>
+			<li> | </li>
+			<li> Terms of use</li>
+			<li> | </li>
+			<li> Privacy </li>
+			<li> | </li>
+			<li> Legal and Trademark Notices </li>
+			<li> | </li>
+			<li> About Intuit </li>
+		</ul>
+	</div>
+
+	<div id="footer_2">
+		<img class="footer_images" id="norton" src="assets/norton.gif">
+		<img class="footer_images" id="truste" src="assets/truste.svg">
+	</div>
+
+	<div id="footer_3">
+		<p>© 2017 Intuit, Inc.  |  ph7564.6 - spa98.13</p>
+	</div>
+
   </body>
 
 </html>
+
+
+
